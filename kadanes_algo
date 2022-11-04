@@ -1,0 +1,15 @@
+        https://leetcode.com/problems/maximum-subarray/submissions/ 
+        https://www.youtube.com/watch?v=w4W6yya1PIc 
+        
+        
+         int sum = 0 ; 
+    int cm = a[0] ;
+        for( int i = 0 ; i<a.size() ; i++) 
+        {  
+          sum+=a[i] ; 
+            cm = max(cm,sum) ; 
+            if(sum<=0) sum = 0 ; 
+            
+        }
+        return cm ; 
+        its give sol in o(n) time
